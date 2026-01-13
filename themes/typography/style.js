@@ -22,7 +22,7 @@ const Style = () => {
           PingFang SC,
           PingFang HK,
           PingFang TC,
-          sans-serif !important;
+          sans-serif;
         }
       }
       // 底色

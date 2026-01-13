@@ -37,11 +37,13 @@ export const BlogItem = props => {
           <h2 className='mb-2'>
             <SmartLink
               href={post.href}
-              className='text-xl underline decoration-2 font-bold text-[var(--primary-color)] dark:text-white dark:hover:bg-white dark:hover:text-[var(--primary-color)]  duration-200 transition-all rounded-sm'>
-              {siteConfig('POST_TITLE_ICON') && (
+              className='text-xl font-black text-[var(--primary-color)] dark:text-white dark:hover:bg-white dark:hover:text-[var(--primary-color)]  duration-200 transition-all rounded-sm'>
+              {/*siteConfig('POST_TITLE_ICON') && (
                 <NotionIcon icon={post.pageIcon} />
-              )}
-              {post.title}
+              )*/}
+              <span className="align-middle underline decoration-1 underline-offset-4 hover:text-red-400">
+                {post.title}
+              </span>
             </SmartLink>
           </h2>
 
